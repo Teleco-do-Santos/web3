@@ -1,0 +1,107 @@
+/* Add a loading animation to the body */
+.loading {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: loading 2s linear infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Animate the navigation bar */
+  nav.animate {
+    animation: navbar 1s ease-in-out;
+  }
+  
+  @keyframes navbar {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animate the sections */
+  section.animate {
+    animation: section 1s ease-in-out;
+  }
+  
+  @keyframes section {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* Add a loading animation to the body */
+.loading {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Animate the navigation bar */
+  nav {
+    transition: transform 1s ease-in-out;
+  }
+  
+  nav.animate {
+    transform: translateY(0);
+  }
+  
+  /* Animate the sections */
+  section {
+    transition: transform 1s ease-in-out;
+  }
+  
+  section.animate {
+    transform: translateY(0);
+  }

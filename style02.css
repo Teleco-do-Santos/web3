@@ -1,0 +1,99 @@
+/* Add some Google-style typography and colors */
+body {
+    font-family: 'Product Sans', Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* add overflow hidden to container */
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: scale(1.1); /* add scale effect to image */
+    transition: transform 0.3s ease; /* add transition effect to image */
+}
+
+.image-container:hover img {
+    transform: scale(1.0); /* scale down on hover */
+}
+
+.text-box {
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #337ab7;
+}
+
+.text-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.text-box button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* add transition effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* add box shadow to button */
+}
+
+.text-box button:hover {
+    background-color: #23527c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* add more prominent box shadow on hover */
+}
+
+#more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; /* add transition effect */
+    padding: 20px; /* add padding to more content */
+    background-color: #f7f7f7; /* add background color to more content */
+    border-top: 1px solid #ddd; /* add border top to more content */
+}
+
+#more-content.expanded {
+    max-height: 500px; /* adjust this value to fit your content */
+}
+
+#more-content.expanded p {
+    animation: fadeIn 0.5s ease; /* add animation to paragraphs */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
